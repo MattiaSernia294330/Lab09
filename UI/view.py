@@ -24,7 +24,7 @@ class View(ft.UserControl):
         self._page.controls.append(self._title)
 
         #ROW with  controls
-        self._txtIn = ft.TextField(label="Distanza Minima")
+        self._txtIn = ft.TextField(label="Distanza Minima", on_change=self._controller.readDistanza)
         self._btnAnalizza = ft.ElevatedButton(text="Analizza Aeroporti", on_click=self._controller.handleAnalizza)
         row1 = ft.Row([self._txtIn, self._btnAnalizza],
                       alignment=ft.MainAxisAlignment.CENTER)
