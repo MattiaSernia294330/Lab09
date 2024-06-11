@@ -8,5 +8,5 @@ class Connessione():
 
 
 
-def __hash__(self):
-    return hash(self._ID)
+    def __hash__(self):
+        return hash(self._ID)
